@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import allStockReducer from '../features/stockList/stockListSlice';
+import trendChartSlice from '../features/trendChart/trendChartSlice';
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    all_stocks: allStockReducer,
+    history: trendChartSlice,
   },
 });
 
